@@ -133,6 +133,10 @@ figcaption {
     text-align: center;
 }
 
+#rentals h2 {
+    
+}
+
 .tel-link {
     background-color: #373684;
     padding: 2%;
@@ -161,7 +165,64 @@ figcaption {
     height: 50%;
 }
 
+/* Style rules for table*/
+
+table {
+    border: 1px solid #373684;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+th, td {
+    border: 1px solid #373648;
+    padding: 1%;
+}
+
+th {
+    background-color: #373648;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+    background-color: #b7b7e1;
+}
+
+/*Style Rules for form elements*/
 /* Style rules for footer content */
+
+fieldset, input {
+    margin: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+#submit {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
+}
+
 footer {
     text-align: center;
     font-size: 0.65em;
@@ -177,6 +238,7 @@ footer a {
 @media screen and (min-width: 550px), print {
     
     /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    /* Tablet Viewport: style rules for form elements */
     .tab-desk {
         display: block;
     }
@@ -220,6 +282,14 @@ footer a {
    .map {
         width: 500px;
         height: 450px;
+    }
+    
+    form {
+        width: 70%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }
@@ -267,6 +337,24 @@ footer a {
     
     aside {
         grid-column: 1 / span 4;
+    }
+    
+    /*Desktop Viewport: Style rules for table*/
+    
+    table {
+        width: 70%;
+    }
+    
+    /*Desktop Viewport: style rules for form elements*/
+    
+    form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+    
+    .btn {
+        grid-column: 1 / span 2;
     }
     
 }
